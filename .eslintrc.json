@@ -1,0 +1,16 @@
+/* https://eslint.org/docs/user-guide/configuring */
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  /*"extends": ["google"],*/
+  "extends": ["plugin:prettier/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {}
+}
