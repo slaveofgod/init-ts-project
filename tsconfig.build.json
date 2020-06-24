@@ -1,8 +1,26 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "AMD",
-    "outFile": "./build/build.js"
+    /* Basic Options */
+    "target": "es5",
+    "module": "ES2015",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "removeComments": true,
+
+    /* Strict Type-Checking Options */
+    "strict": true,
+
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+
+    /* Module Resolution Options */
+    "baseUrl": "./dist/bundle.js",
+
+    /* Experimental Options */
+    "experimentalDecorators": true
   },
   "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
 }
