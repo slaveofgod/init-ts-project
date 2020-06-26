@@ -35,6 +35,10 @@ module.exports = {
           limit: 8192,
         },
       },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
     ],
   },
   resolve: {
